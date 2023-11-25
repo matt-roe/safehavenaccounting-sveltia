@@ -1,37 +1,33 @@
 <script>
 	import MainNav from './MainNav.svelte'
-	import { siteAuthor } from '$lib/config'
-
-  import lottie from 'lottie-web';
-  import animationData from '$lib/assets/animations/home.json';
-  import { onMount } from 'svelte';
-
-  let animationContainer
-  onMount(()=>{
-    lottie.loadAnimation({
-      container: animationContainer,
-      animationData: animationData
-    })
-  })
+	import { siteTitle, siteDescription, siteAuthor, siteAdministrator, siteAdminLink, siteTemplateLink, siteTemplateAuthor } from '$lib/config'
+	import Chat from '$lib/components/Chat.svelte';
 </script>
 
 <footer>
-	<MainNav />
-
-	<nav>
-		<ul>
-			<li>
-				<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
-			</li>
-			<li>
-				<a href="/">Home</a>
-			</li>
-		</ul>
-	</nav>
 
   <div>
-    <p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
-    <div class="w-20" bind:this={animationContainer}></div>
+    <MainNav />
+    <nav>
+      <ul>
+        <li>
+          <a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+    <Chat />
+  </div>
+
+  <div>
+    <p class="h2">{siteTitle}</p>
+    <p class="h4">{siteDescription}</p>
+    <br>
+    <p>Website created with <a href='https://svelte.kit'>Sveltekit</a><br> by <a href={siteAdminLink}>{siteAdministrator}</a><br>with special thanks to <a href={siteTemplateLink}> {siteTemplateAuthor}</a></p>
+    <br>
+    <span class="badge">&copy;{new Date().getFullYear()} {siteAuthor}</span>
   </div>
 
 </footer>

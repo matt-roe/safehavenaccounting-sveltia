@@ -3,7 +3,7 @@
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte'
 	import { siteTitle } from '$lib/config'
   import lottie from 'lottie-web';
-  import animationData from '$lib/assets/animations/bars.json';
+  import animationData from '$lib/assets/animations/accounting.json';
   import { onMount } from 'svelte';
 
   let isModalOpen = false

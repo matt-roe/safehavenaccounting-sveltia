@@ -6,10 +6,14 @@
  **/
 
 export const siteTitle = 'Safe Haven Accounting'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter & Sveltia'
+export const siteDescription = 'Accounting & bookkeeping services for business and not for profit organizations.'
 export const siteURL = 'safehavenaccounting.com'
 export const siteLink = 'https://safehavenaccounting.com/'
 export const siteAuthor = '- Safe Haven Accounting'
+export const siteAdministrator = 'Data Insight Solutions'
+export const siteAdminLink = 'https://data-insight-solutions.com/'
+export const siteTemplateLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
+export const siteTemplateAuthor = 'Josh Collinsworth'
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10

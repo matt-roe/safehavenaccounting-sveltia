@@ -2,7 +2,7 @@
 	import { siteTitle } from '$lib/config';
 
   import Carousel from '$lib/components/Carousel.svelte';
-	import Chat from '$lib/components/Chat.svelte';
+
 	import Hero from '$lib/components/Hero.svelte';
 	import HeroCards from '$lib/components/HeroCards.svelte';
 
@@ -31,8 +31,6 @@
 		<div class="container mx-auto my-auto">
 			<HeroCards />
 		</div>
-
-		<Chat />
 
 	</div>
 </div>
