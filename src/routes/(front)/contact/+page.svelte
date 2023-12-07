@@ -9,8 +9,10 @@
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
+<div class="grid place-items-center">
+  <h1>Contact</h1>
+</div>
 
-<h1>Contact</h1>
 
 Here you can inquire about us, our process and services, or just say hello!
 

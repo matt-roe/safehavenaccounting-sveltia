@@ -10,7 +10,7 @@ const config = {
   },
 
   daisyui: {
-    themes: ["acid"],
+    themes: ["pastel"],
   },
 
 	plugins: [require("daisyui")],

@@ -1,24 +1,17 @@
 <script>
 	import MainNav from './MainNav.svelte'
 	import { siteTitle, siteDescription, siteAuthor, siteAdministrator, siteAdminLink, siteTemplateLink, siteTemplateAuthor } from '$lib/config'
-	import Chat from '$lib/components/Chat.svelte';
+	import Testimonials from '$lib/components/Testimonials.svelte';
 </script>
 
 <footer>
 
   <div>
     <MainNav />
-    <nav>
-      <ul>
-        <li>
-          <a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 
   <div>
-    <Chat />
+    <Testimonials />
   </div>
 
   <div>
