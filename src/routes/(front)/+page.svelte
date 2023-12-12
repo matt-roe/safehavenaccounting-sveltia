@@ -7,11 +7,11 @@
 </script>
 
 <button class="disable" on:click={() => disabled = !disabled}>Stop animation</button>
-
+<div class="w-screen" style="overflow: visible !important;">
 <Parallax sections={3} bind:this={parallax} disabled={disabled}>
 	{#each fancy as char, index (index)}
 	  <ParallaxLayer
-			rate={(index + 1) / (fancy.length - 1)}
+			rate={(index + .5) / (fancy.length - 1)}
       offset={1}
 		  style="
 			  margin-left: {7.7 + (index * 7)}%;
@@ -27,7 +27,7 @@
 	{/each}
 
 	<ParallaxLayer offset={1} rate={-2.5} style="display: flex; justify-content: flex-end;">
-		<div style="background-color: lightblue; opacity: 0.5; margin-right:-50%; width: 100%; height: 100%; overflow: auto;"/>
+		<div style="background-color: lightblue; opacity: 0.5; margin-left:50%; width:100%; height: 100%;"/>
 	</ParallaxLayer>
 
 	<ParallaxLayer offset={1} rate={2.5} style="display: flex; justify-content: flex-start;">
@@ -49,7 +49,7 @@
 		  class="btn"
 			on:click={() => parallax.scrollTo(3, {selector: '#bottom', duration: 4000})}
 		>
-		  Learn More
+		  Learn More ↓
 		</button>
   </ParallaxLayer>
 
@@ -92,7 +92,7 @@
     </div>
   </ParallaxLayer>
 </Parallax>
-
+</div>
 <style>
   .disable {
     position: fixed;

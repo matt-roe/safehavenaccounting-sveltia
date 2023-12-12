@@ -1,6 +1,6 @@
 <div class="p-4 xl:p-10 rounded-lg">
 	<div class="max-w-lg mx-auto">
-		<div class="text-xl font-bold text-center">Testimonials</div>
+		<h4>Testimonials</h4>
 		<div class="text-sm text-center">
 			Safe Haven Accounting has many happy customers.
 		</div>

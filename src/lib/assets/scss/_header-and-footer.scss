@@ -33,8 +33,8 @@ footer {
 }
 
 header {
-	background: transparent;
-	color: var(--darker);
+	background-image: linear-gradient(to top, rgba(255,0,0,0), var(--lightAccent));
+	color: var(--white);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -46,7 +46,7 @@ header {
 	}
 
 	.site-title {
-		font-family: var(--accentFont);
+		font-family: var(--white);
     font-size: 2.6rem;
 		line-height: 1;
 		color: inherit;
@@ -159,12 +159,11 @@ header {
 }
 
 footer {
-	background: var(--darker);
-	color: var(--paper);
+	background-image: linear-gradient(to bottom, rgba(255,0,0,0), var(--lightAccent));
 	display: grid;
 	grid-template-columns: 100%;
-	align-items: stretch;
-	gap: 2rem;
+	align-items: normal;
+	gap: 1rem;
 
 	@media (min-width: vars.$smMin) {
 		grid-template-columns: 1fr 1fr 2fr;
@@ -174,27 +173,12 @@ footer {
 		display: none;
 	}
 
-	p {
-		margin: 0;
-		font-size: 0.8rem;
-	}
-
-	a {
-		color: inherit;
-	}
-
 	nav {
 		display: initial;
-
-		@media (min-width: vars.$smMin) {
-			border-right: 1px solid var(--dark);
-		}
-
 		ul {
 			display: initial;
-
 			li + li {
-				margin-top: 0.5rem;
+				margin-top: 1rem;
 			}
 		}
 	}

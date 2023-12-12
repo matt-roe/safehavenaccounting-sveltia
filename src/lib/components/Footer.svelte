@@ -7,16 +7,17 @@
 <footer>
 
   <div>
+    <h3>Navigation</h3>
     <MainNav />
   </div>
 
-  <div>
+  <div style="margin-top:-2.4rem;">
     <Testimonials />
   </div>
 
   <div>
-    <p class="h2">{siteTitle}</p>
-    <p class="h4">{siteDescription}</p>
+    <h3>{siteTitle}</h3>
+    <h5>{siteDescription}</h5>
     <br>
     <p>Website created with <a href='https://svelte.kit'>Sveltekit</a><br> by <a href={siteAdminLink}>{siteAdministrator}</a><br>with special thanks to <a href={siteTemplateLink}> {siteTemplateAuthor}</a></p>
     <br>
