@@ -29,10 +29,10 @@
 		netlify-honeypot="bot-field"
 		action="https://formspree.io/f/mvojdjre"
 	>
-		<label for="name" class="mb-2 max-w-sm min-w-xs">Your Name:
+		<label for="name" class="mb-2">Name:
       <input class="input text-black" id="name" placeholder="Name" type="text" name="name" /></label
 		>
-		<label for="business" class="mb-2 max-w-sm min-w-xs"
+		<label for="business" class="mb-2"
 			>Business Name:
       <input
         class="input text-black"
@@ -42,27 +42,29 @@
 				name="business"
 			/></label
 		>
-		<label for="email" class="mb-2 max-w-sm min-w-xs"
-			>Your Email: <input class="input text-black" id="email" placeholder="Email" type="email" name="email" /></label
+		<label for="email" class="mb-2"
+			>Email: <input class="input text-black" id="email" placeholder="Email" type="email" name="email" /></label
 		>
-		<label for="phone" class="mb-2 max-w-sm min-w-xs"
-			>Your Phone: <input class="input text-black" id="phone" placeholder="Phone" type="phone" name="phone" /></label
+		<label for="phone" class="mb-2"
+			>Phone: <input class="input text-black" id="phone" placeholder="Phone" type="phone" name="phone" /></label
 		>
-    <label for="preferPhone" class="mb-2 max-w-sm min-w-xs">
+    <label for="preferPhone" class="mb-2">
       I prefer phone:
-      <input id="preferPhone" class="checkbox max-w-sm min-w-xs" type="checkbox" name="preferPhone"/>
+      <input id="preferPhone" class="checkbox" type="checkbox" name="preferPhone"/>
     </label>
 
-
-    <select class="select select-bordered w-full mb-2 max-w-sm min-w-xs text-black" items={options} bind:value={selected}>
+    <label for="role" class="mb-2">
+      Role
+    </label>
+    <select id="role" class="select select-bordered w-full mb-2 text-black" items={options} bind:value={selected}>
       <option disabled selected>Your role:</option>
       {#each options as option}
           <option>{option.name}</option>
       {/each}
     </select>
 
-		<label for="message" class="label">
-      <span class="label-text text-white">Your Message</span>
+		<label for="message" class="mb-2">
+      Message
     </label>
     <textarea id="message" class="textarea textarea-bordered text-black" placeholder="Message"></textarea>
 
