@@ -40,6 +40,9 @@
 	actual contents will show up.
 -->
 <div class="layout" class:open={$isMenuOpen}>
+  <div class="layout-overlay">
+
+
 	<Header />
 	{#key data.path}
 		<main
@@ -53,4 +56,5 @@
 		</main>
 	{/key}
 	<Footer />
+</div>
 </div>

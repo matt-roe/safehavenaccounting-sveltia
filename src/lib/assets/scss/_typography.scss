@@ -5,7 +5,7 @@
 	line-height: 1.1;
 	font-family: var(--accentFont);
 	font-weight: bold;
-	color: var(--white);
+	color: var(--black);
 }
 
 h1 {
@@ -59,9 +59,9 @@ h6 {
 }
 
 a {
-	color: var(--white);
+	color: var(--black);
 	text-decoration-thickness: 1px;
-	text-decoration-color: var(--lighterAccent);
+	text-decoration-color: var(--darkAccent);
 }
 
 ul {
