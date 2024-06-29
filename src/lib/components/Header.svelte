@@ -65,7 +65,7 @@
 	});
 </script>
 
-<header>
+<header class="bg-teal-950">
 	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
 		Skip to main content
 	</a>
@@ -73,7 +73,7 @@
 	<a href="/" class="site-title">
 		{siteTitle}
 	</a>
-	<div class="w-20" bind:this={animationContainer} />
+	<!--  <div class="w-20" bind:this={animationContainer} />  -->
 	<HamburgerMenuButton />
 	<MainNav />
 </header>

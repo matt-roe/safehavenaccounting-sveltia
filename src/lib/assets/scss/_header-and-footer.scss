@@ -36,7 +36,7 @@ header {
 	//background-image: linear-gradient(to top, rgba(255,0,0,0), var(--lightAccent));
   padding-left: 5%;
   padding-right: 5%;
-	color: var(--black);
+	color: var(--white);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -51,7 +51,7 @@ header {
 		font-family: var(--white);
     font-size: 2.6rem;
 		line-height: 1;
-		color: inherit;
+		color: white;
 		text-align: center;
 		margin: 0;
 		display: block;
@@ -66,7 +66,7 @@ header {
 	.menu-button {
 		margin: 0;
 		background: transparent !important;
-		color: inherit;
+		color: white;
 		padding: 0;
 		border: 0;
 		width: 2rem;
@@ -90,8 +90,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: var(--darker);
-		color: var(--paper);
+		color: var(--white);
 		transition: all .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 		&.open {
@@ -105,7 +104,7 @@ header {
 				animation: slide_in_left .2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 
 				a {
-					color: inherit;
+					color: white;
 				}
 
 				// Probably shouldn't have more than 8 main nav menu items, but if you do, you can adjust this
@@ -140,7 +139,7 @@ header {
 			background: unset;
 			pointer-events: unset;
 			visibility: unset;
-			color: inherit;
+			color: white;
 
 			ul {
 				margin: 1rem auto 0;
@@ -199,7 +198,7 @@ footer {
 	align-items: center;
 	height: 3rem;
 	background: var(--darker);
-	color: var(--background);
+	color: var(--white);
 
 	&:focus {
 		transform: translateY(6rem);
